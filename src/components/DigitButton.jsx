@@ -1,10 +1,11 @@
-function DigitButton(props){
+function DigitButton({onClick,digit}){
 
     return(
     <>
-        <h1>{props.message}</h1>
-        <h1>{props.message1}</h1>
-        <h1>{props.message2}</h1>
+        <button onClick={() => onClick(digit)}>
+            {digit}
+        </button>
+
     </>
 
     )
